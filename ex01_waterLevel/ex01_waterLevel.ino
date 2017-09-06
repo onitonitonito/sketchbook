@@ -6,7 +6,7 @@ int buz01 = 9, buz02 = 8, buz03 = 7, buz04 = 6;
 
 void setup()  {
   Serial.begin(9600);    // baud rate = 9600
-  Serial.println("Hello Arduino!");
+  Serial.println("*** SERIAL MONITOR IS READY! ***");
 
   for (int n = port01; n >= port04; n--)  {
     pinMode(n, INPUT);
@@ -31,7 +31,6 @@ void loop() {
   Serial.println("*** BUZZ ALL RESET (OFF) ***");
 
   for(int n = 1; n <= 20; n++)  {
-    Serial.println(); 
+    Serial.println();
   }
 }
-
